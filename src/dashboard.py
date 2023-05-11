@@ -63,14 +63,14 @@ year = st.slider(label='Select the year',min_value=1971,max_value=2023,step=1,va
 
 data_fil = data[data['Report Year'] == year]
 
-fig = px.parallel_coordinates(data_fil, color="WBL INDEX",
-                              dimensions=['MOBILITY', 
-                                          'MARRIAGE','PARENTHOOD','ENTREPRENEURSHIP', 'WORKPLACE',
-                                          'ASSETS','PENSION','PAY'],
-                              color_continuous_scale=px.colors.sequential.thermal,
-                              title = f'WBL Index Based on the Categories for the Year {year}')
+##fig = px.parallel_coordinates(data_fil, color="WBL INDEX",
+##                              dimensions=['MOBILITY', 
+#                                         'MARRIAGE','PARENTHOOD','ENTREPRENEURSHIP', 'WORKPLACE',
+#                                          'ASSETS','PENSION','PAY'],
+#                              color_continuous_scale=px.colors.sequential.thermal,
+#                              title = f'WBL Index Based on the Categories for the Year {year}')
 
-st.plotly_chart(fig, use_container_width=True)
+##st.plotly_chart(fig, use_container_width=True)
 
 st.write('In the following plot, you can choose one or more regions and see how their categories score behave and relate')
 
